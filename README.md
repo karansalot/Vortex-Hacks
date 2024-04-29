@@ -1,5 +1,8 @@
 Contract deployed and verified at Scroll Sepolia
 https://sepolia.scrollscan.com/address/0xc170317250c31e4acd6eba3f689ebc665c0663a3
+
+All the functions of the contract are explained below
+
 constructor(): This is the constructor function that runs only once when the contract is deployed. It sets the admin variable to the address of the account deploying the contract.
 addMember(address _member) external onlyAdmin: This function allows the contract administrator to add new members to the DAO. It takes the address of the member to be added as an argument and sets their status to true in the members mapping.
 createProposal(string memory _description) external: Members of the DAO can use this function to create new proposals. They provide a description of the proposal as input, which gets stored in the proposals mapping along with other relevant information such as the creator's address, vote counts, and execution status.
